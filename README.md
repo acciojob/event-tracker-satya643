@@ -29,21 +29,11 @@ npm install
 
 2. Start the development server:
 ```bash
-# For Windows PowerShell
-$env:NODE_OPTIONS="--openssl-legacy-provider"; npm start
-
-# For Command Prompt
-set NODE_OPTIONS=--openssl-legacy-provider && npm start
-```
+ npm start
 
 3. Build for production:
-```bash
-# For Windows PowerShell
-$env:NODE_OPTIONS="--openssl-legacy-provider"; npm run build
+ npm run build
 
-# For Command Prompt
-set NODE_OPTIONS=--openssl-legacy-provider && npm run build
-```
 
 ## Usage
 

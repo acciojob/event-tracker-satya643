@@ -1,36 +1,73 @@
-# Event Tracker
+# Event Tracker Calendar
 
-# Create a Event Tracker Calendar where you can add, edit and delete events. 
+A simple React-based calendar application that allows users to add, edit, and delete events with filtering options.
 
-Also have 3 buttons  
+## Features
 
-- All(that shows all the events)
-- past(that shows past events) 
-- upcoming (that shows upcoming events only)
+- **Event Creation**: Click on any date to create a new event
+- **Event Editing**: Click on existing events to edit their details
+- **Event Deletion**: Remove events through the edit popup
+- **Event Filtering**: Three filter buttons to view:
+  - All Events
+  - Past Events (pink background)
+  - Upcoming Events (green background)
+- **Calendar Navigation**: Navigate between months using Previous/Next buttons
 
-Upon clicking on a date, a create event popup should be displayed.
+## Technologies Used
 
-If a event is event is already created, upon clicking on a date, Edit/Delete popup should be shown.
+- React 16.13.1
+- Moment.js for date handling
+- Custom CSS for styling
+- Webpack for bundling
 
-**You the following libraries:**
+## Installation & Setup
 
-- Moment
-- React Popup
-- React Big Calendar
+1. Install dependencies:
+```bash
+npm install
+```
 
-**You can paste the following in dependencies in package.json file:**
+2. Start the development server:
+```bash
+# For Windows PowerShell
+$env:NODE_OPTIONS="--openssl-legacy-provider"; npm start
 
-"moment": "^2.22.2",
+# For Command Prompt
+set NODE_OPTIONS=--openssl-legacy-provider && npm start
+```
 
-"react-big-calendar": "^0.20.1",
+3. Build for production:
+```bash
+# For Windows PowerShell
+$env:NODE_OPTIONS="--openssl-legacy-provider"; npm run build
 
-"react-popup": "^0.9.3",
+# For Command Prompt
+set NODE_OPTIONS=--openssl-legacy-provider && npm run build
+```
 
-**OUTPUT:**
+## Usage
 
-- <a target='_blank' href='https://storage.googleapis.com/acciojob-open-file-collections/output.png'>INITIAL PAGE</a>
-- <a href='https://storage.googleapis.com/acciojob-open-file-collections/event_popup.png'>EVENT POPUP</a>
-- <a href='https://storage.googleapis.com/acciojob-open-file-collections/all_events.png'>ALL EVENTS</a>
-- <a href='https://storage.googleapis.com/acciojob-open-file-collections/future_events.png'>UPCOMING EVENTS</a>
-- <a href='https://storage.googleapis.com/acciojob-open-file-collections/past_events.png'>PAST EVENTS</a>
-- <a href='https://storage.googleapis.com/acciojob-open-file-collections/edit:delete_event.png'>EDIT/DELETE EVENT</a>
+1. **Creating Events**: Click on any date in the calendar to open the event creation popup
+2. **Editing Events**: Click on an existing event to open the edit/delete popup
+3. **Filtering Events**: Use the three buttons at the top to filter events by type
+4. **Navigation**: Use the Previous/Next buttons to navigate between months
+
+## Event Colors
+
+- **Past Events**: Pink background (rgb(222, 105, 135))
+- **Upcoming Events**: Green background (rgb(140, 189, 76))
+
+## Project Structure
+
+```
+src/
+├── components/
+│   └── App.js          # Main application component
+├── styles/
+│   └── App.css         # Application styles
+└── index.js            # Application entry point
+```
+
+## Browser Compatibility
+
+The application works in all modern browsers that support React 16+.
